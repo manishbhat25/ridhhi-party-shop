@@ -19,7 +19,7 @@ export function StoreLocation() {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <section id="visit" className="scroll-mt-28 px-5 py-24 md:py-32">
+    <section id="visit" className="scroll-mt-24 px-5 py-16 md:scroll-mt-28 md:py-32">
       <div className="mx-auto grid max-w-6xl items-stretch gap-10 md:grid-cols-[1.05fr_0.95fr] md:gap-16">
         <div className="flex flex-col justify-between">
           <div>

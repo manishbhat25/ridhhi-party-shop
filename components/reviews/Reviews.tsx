@@ -27,7 +27,7 @@ export function Reviews() {
   const supporting = reviews.filter((review) => review.id !== featuredReview.id);
 
   return (
-    <section id="reviews" className="relative scroll-mt-28 overflow-hidden px-5 py-24 md:py-32">
+    <section id="reviews" className="relative scroll-mt-24 overflow-hidden px-5 py-16 md:scroll-mt-28 md:py-32">
       <div className="mx-auto max-w-6xl">
         <p className="text-xs tracking-[0.28em] text-ink-soft uppercase">
           From the neighbourhood
@@ -38,7 +38,7 @@ export function Reviews() {
         <p className="mt-4 text-ink-soft">Words from people who visited us.</p>
       </div>
 
-      <div className="relative mx-auto mt-16 min-h-[34rem] max-w-6xl md:min-h-[42rem]">
+      <div className="relative mx-auto mt-10 max-w-6xl md:mt-16 md:min-h-[42rem]">
         <div className="pointer-events-none absolute inset-0 hidden md:block" aria-hidden="true">
           {supporting.map((review, index) => (
             <article

@@ -7,7 +7,7 @@ export function IntroRibbon() {
   return (
     <section
       aria-label="Celebration introduction"
-      className="relative overflow-hidden border-y border-ink/8 py-10 md:py-16"
+      className="relative overflow-hidden border-y border-ink/8 py-8 md:py-16"
     >
       <div className="mx-auto max-w-6xl px-5">
         <p className="font-display max-w-3xl text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.92] tracking-[-0.04em]">
@@ -23,7 +23,7 @@ export function IntroRibbon() {
               key={`${item.id}-${index}`}
               className="flex items-center gap-4"
             >
-              <div className="relative h-16 w-16 overflow-hidden rounded-full md:h-20 md:w-20">
+              <div className="relative h-12 w-12 overflow-hidden rounded-full md:h-20 md:w-20">
                 <Image
                   src={item.image}
                   alt=""
@@ -32,7 +32,7 @@ export function IntroRibbon() {
                   className="object-cover"
                 />
               </div>
-              <figcaption className="font-display text-2xl tracking-tight text-ink/80 md:text-3xl">
+              <figcaption className="font-display text-xl tracking-tight text-ink/80 md:text-3xl">
                 {item.title}
               </figcaption>
             </figure>

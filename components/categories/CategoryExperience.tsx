@@ -32,7 +32,7 @@ function CategoryCard({
   return (
     <article
       className={cn(
-        "group relative isolate min-h-[58vh] min-w-[78vw] overflow-hidden rounded-[2rem] bg-ivory-deep snap-center md:min-h-0 md:min-w-0 md:rounded-[2.25rem]",
+        "group relative isolate min-h-[46vh] min-w-[82vw] overflow-hidden rounded-[1.6rem] bg-ivory-deep snap-center md:min-h-0 md:min-w-0 md:rounded-[2.25rem]",
         className,
       )}
     >
@@ -73,7 +73,7 @@ function CategoryCard({
 
 export function CategoryExperience() {
   return (
-    <section id="explore" className="scroll-mt-28 px-5 py-24 md:py-32">
+    <section id="explore" className="scroll-mt-24 px-5 py-16 md:scroll-mt-28 md:py-32">
       <div className="mx-auto max-w-6xl">
         <p className="text-xs tracking-[0.28em] text-ink-soft uppercase">
           In the shop
@@ -87,7 +87,7 @@ export function CategoryExperience() {
         </p>
       </div>
 
-      <div className="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:hidden">
+      <div className="mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:hidden [&::-webkit-scrollbar]:hidden">
         {categories.map((category) => (
           <CategoryCard key={category.id} category={category} />
         ))}

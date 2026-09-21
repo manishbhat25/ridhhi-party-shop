@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/cn";
 import { hasPhone, hasWhatsApp, telHref, whatsappHref } from "@/content/site";
 import { directionsHref } from "@/lib/maps";
 
@@ -28,11 +29,10 @@ export function StickyActionBar() {
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className="flex min-h-12 flex-1 items-center justify-center text-sm tracking-wide"
-              style={{
-                borderLeft:
-                  index === 0 ? undefined : "1px solid rgba(255, 247, 251, 0.12)",
-              }}
+              className={cn(
+                "flex min-h-12 flex-1 items-center justify-center text-sm tracking-wide",
+                index > 0 && "border-l border-ivory/15",
+              )}
             >
               {item.label}
             </a>

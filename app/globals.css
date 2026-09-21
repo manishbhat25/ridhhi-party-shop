@@ -170,6 +170,12 @@ body {
   top: 1rem;
 }
 
+@media (max-width: 767px) {
+  .grain {
+    opacity: 0.018;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

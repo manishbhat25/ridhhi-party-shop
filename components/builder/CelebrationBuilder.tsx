@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function Scene({ celebration }: { celebration: Celebration }) {
   return (
-    <div className="relative h-[min(68vh,560px)] overflow-hidden rounded-[2rem] bg-ink md:h-[680px] md:rounded-[2.5rem]">
+    <div className="relative h-[min(48vh,380px)] overflow-hidden rounded-[1.6rem] bg-ink md:h-[680px] md:rounded-[2.5rem]">
       <div
         className="absolute inset-0"
         style={{
@@ -66,7 +66,7 @@ export function CelebrationBuilder() {
   const reduced = useReducedMotion();
 
   return (
-    <section id="celebrations" className="scroll-mt-28 px-5 py-8 md:py-16">
+    <section id="celebrations" className="scroll-mt-24 px-5 py-8 md:scroll-mt-28 md:py-16">
       <div className="mx-auto max-w-6xl">
         <p className="text-xs tracking-[0.28em] text-ink-soft uppercase">
           Build your celebration
@@ -78,7 +78,7 @@ export function CelebrationBuilder() {
         <div
           role="tablist"
           aria-label="Celebration type"
-          className="mt-8 flex gap-2 overflow-x-auto pb-2"
+          className="mt-6 flex gap-2 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mt-8"
         >
           {celebrations.map((item) => {
             const selected = item.id === active.id;

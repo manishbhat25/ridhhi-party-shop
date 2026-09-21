@@ -55,7 +55,7 @@ export function WhyVisit() {
 
   return (
     <section className="bg-ink text-ivory">
-      <div className="px-5 pt-24 md:pt-32">
+      <div className="px-5 pt-16 md:pt-32">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs tracking-[0.28em] text-champagne uppercase">
             Why visit

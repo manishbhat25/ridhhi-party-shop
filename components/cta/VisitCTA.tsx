@@ -9,7 +9,7 @@ export function VisitCTA() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden bg-ivory-deep px-5 py-28 md:py-36">
+    <section className="relative overflow-hidden bg-ivory-deep px-5 py-20 md:py-36">
       <svg
         className="pointer-events-none absolute inset-x-0 top-10 h-40 w-full text-coral"
         viewBox="0 0 1200 160"
@@ -45,20 +45,20 @@ export function VisitCTA() {
           <br />
           in {site.locality}, {site.city}.
         </p>
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Button href={directionsHref} variant="ink" external>
+        <div className="mt-8 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-10 sm:flex-row sm:items-center">
+          <Button href={directionsHref} variant="ink" external className="w-full sm:w-auto">
             Get Directions
           </Button>
           {hasWhatsApp && whatsappHref ? (
-            <Button href={whatsappHref} variant="coral" external>
+            <Button href={whatsappHref} variant="coral" external className="w-full sm:w-auto">
               WhatsApp Us
             </Button>
           ) : hasPhone && telHref ? (
-            <Button href={telHref} variant="coral">
+            <Button href={telHref} variant="coral" className="w-full sm:w-auto">
               Call the Shop
             </Button>
           ) : (
-            <Button href="#visit" variant="outline">
+            <Button href="#visit" variant="outline" className="w-full sm:w-auto">
               Visit the Store
             </Button>
           )}
