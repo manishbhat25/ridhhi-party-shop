@@ -2,46 +2,32 @@
 
 import { Button } from "@/components/ui/Button";
 import { directionsHref } from "@/lib/maps";
-import { shouldUse3D } from "@/lib/device";
-import { useReducedMotion } from "motion/react";
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
-import { HeroFallback } from "./HeroFallback";
-
-const Hero3D = dynamic(() => import("./Hero3D"), {
-  ssr: false,
-  loading: () => <HeroFallback />,
-});
+import Image from "next/image";
 
 export function Hero() {
-  const reduced = useReducedMotion();
-  const [use3d, setUse3d] = useState(false);
-
-  useEffect(() => {
-    setUse3d(!reduced && shouldUse3D());
-  }, [reduced]);
-
   return (
     <section
       id="hero"
       className="relative flex min-h-[100svh] flex-col overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <HeroFallback />
-        {use3d ? (
-          <div className="absolute inset-0 h-full w-full">
-            <Hero3D />
-          </div>
-        ) : null}
+        <Image
+          src="/images/hero-poster.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="hero-shine" aria-hidden="true" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,247,251,0.18)_0%,rgba(255,247,251,0.55)_48%,rgba(255,247,251,0.92)_100%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ivory to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-ivory to-transparent" />
       </div>
-
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(246,241,232,0.28)_70%,#F6F1E8_100%)]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-40 bg-gradient-to-b from-ivory to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-36 bg-gradient-to-t from-ivory to-transparent" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 pb-28 pt-28 md:pb-16 md:pt-32">
         <div className="flex justify-center">
-          <p className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ivory/70 px-3 py-1.5 text-xs tracking-[0.18em] text-ink-soft uppercase backdrop-blur-md">
+          <p className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ivory/75 px-3 py-1.5 text-xs tracking-[0.18em] text-ink-soft uppercase backdrop-blur-md">
             <span aria-hidden="true" className="text-champagne">
               ★
             </span>

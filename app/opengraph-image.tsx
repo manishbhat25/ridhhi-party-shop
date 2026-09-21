@@ -15,8 +15,9 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#F6F1E8",
-          color: "#1C1917",
+          background:
+            "radial-gradient(circle at 12% 12%, #FF7AB6 0%, transparent 36%), radial-gradient(circle at 88% 18%, #F4C430 0%, transparent 32%), #FFF7FB",
+          color: "#1A0828",
           padding: "72px",
           fontFamily: "Georgia, serif",
         }}
@@ -33,7 +34,7 @@ export default function OpenGraphImage() {
               marginTop: 24,
               fontSize: 32,
               fontFamily: "sans-serif",
-              color: "#4A433C",
+              color: "#5A3D58",
             }}
           >
             Make every celebration feel special.
@@ -44,7 +45,7 @@ export default function OpenGraphImage() {
             display: "flex",
             width: 72,
             height: 8,
-            background: "#E07A5F",
+            background: "#FF2E8A",
             borderRadius: 8,
           }}
         />

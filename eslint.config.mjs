@@ -6,10 +6,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
-    files: [
-      "components/hero/**/*.tsx",
-      "components/ui/CustomCursor.tsx",
-    ],
+    files: ["components/ui/CustomCursor.tsx"],
     rules: {
       "react-hooks/set-state-in-effect": "off",
       "react-hooks/purity": "off",

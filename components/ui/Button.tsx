@@ -8,11 +8,12 @@ type Variant = "ink" | "coral" | "outline" | "ghost" | "gold";
 
 const variants: Record<Variant, string> = {
   ink: "bg-ink text-ivory hover:bg-ink/90",
-  coral: "bg-coral text-ivory hover:bg-coral/90",
+  coral:
+    "bg-coral text-ivory shadow-[0_10px_28px_-10px_rgba(255,46,138,0.85)] hover:bg-coral/90",
   outline:
     "border border-ink/15 bg-ivory/40 text-ink backdrop-blur-sm hover:border-ink/40 hover:bg-ivory",
   ghost: "text-ink hover:bg-ink/5",
-  gold: "bg-champagne text-ink hover:bg-champagne/90",
+  gold: "bg-champagne text-ink shadow-[0_10px_28px_-10px_rgba(244,196,48,0.8)] hover:bg-champagne/90",
 };
 
 type Props = {

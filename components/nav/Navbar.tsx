@@ -74,7 +74,7 @@ export function Navbar() {
           className={cn(
             "flex w-full max-w-6xl items-center justify-between rounded-full px-4 py-2.5 transition-[background-color,box-shadow,backdrop-filter] duration-500 md:px-5",
             scrolled
-              ? "bg-ivory/80 shadow-[0_12px_40px_-24px_rgba(28,25,23,0.45)] backdrop-blur-xl"
+              ? "bg-ivory/80 shadow-[0_12px_40px_-20px_rgba(255,46,138,0.35)] backdrop-blur-xl"
               : "bg-transparent",
           )}
         >

@@ -16,7 +16,7 @@ export const categories: Category[] = [
     kicker: "Set the room",
     image: "/images/cat-decorations.png",
     size: "large",
-    alt: "Premium party decorations in coral, cream and champagne gold",
+    alt: "Vibrant party decorations in magenta, gold and teal",
   },
   {
     id: "balloons",
@@ -24,7 +24,7 @@ export const categories: Category[] = [
     kicker: "Fill the air",
     image: "/images/cat-balloons.png",
     size: "tall",
-    alt: "Cluster of champagne, coral and blush party balloons",
+    alt: "Shiny magenta, gold, teal and violet party balloons",
   },
   {
     id: "gifts",
@@ -32,7 +32,7 @@ export const categories: Category[] = [
     kicker: "Send them home smiling",
     image: "/images/cat-gifts.png",
     size: "wide",
-    alt: "Small wrapped return gifts with coral and gold ribbon",
+    alt: "Bright return gifts wrapped in magenta, gold, teal and purple",
   },
   {
     id: "props",
@@ -40,7 +40,7 @@ export const categories: Category[] = [
     kicker: "For the photos",
     image: "/images/cat-props.png",
     size: "small",
-    alt: "Elegant gold mask and cream party hat",
+    alt: "Colorful photo-booth props with gold stars and magenta details",
   },
   {
     id: "wrapping",
@@ -48,7 +48,7 @@ export const categories: Category[] = [
     kicker: "The finishing touch",
     image: "/images/cat-wrapping.png",
     size: "small",
-    alt: "Cream wrapping paper, gold scissors and coral ribbon",
+    alt: "Magenta gift wrap with a shining gold bow and teal ribbon",
   },
   {
     id: "theme",
@@ -56,7 +56,7 @@ export const categories: Category[] = [
     kicker: "Pick a world",
     image: "/images/cat-theme.png",
     size: "small",
-    alt: "Theme party crown, mask and decorations",
+    alt: "Glittering gold crown, magenta mask and theme party pieces",
   },
   {
     id: "toys",
@@ -64,7 +64,7 @@ export const categories: Category[] = [
     kicker: "Little hands, big joy",
     image: "/images/cat-toys.png",
     size: "small",
-    alt: "Wooden toys and a small plush for children's parties",
+    alt: "Colorful wooden toys and a plush for children's parties",
   },
   {
     id: "accessories",
@@ -72,7 +72,7 @@ export const categories: Category[] = [
     kicker: "Candles and extras",
     image: "/images/cat-accessories.png",
     size: "small",
-    alt: "Birthday candles, party hat and coral accessories",
+    alt: "Gold number candle, magenta hat and birthday accessories",
   },
   {
     id: "banners",
@@ -80,7 +80,7 @@ export const categories: Category[] = [
     kicker: "Hang the moment",
     image: "/images/cat-banners.png",
     size: "wide",
-    alt: "Cream and coral birthday bunting against a warm wall",
+    alt: "Magenta, gold, teal and violet birthday bunting",
   },
   {
     id: "supplies",
@@ -88,7 +88,7 @@ export const categories: Category[] = [
     kicker: "Plates, cups, the lot",
     image: "/images/cat-supplies.png",
     size: "small",
-    alt: "Gold plates, cream cups and coral napkins",
+    alt: "Shiny gold plates with magenta, teal and violet party tableware",
   },
   {
     id: "school",
@@ -96,6 +96,6 @@ export const categories: Category[] = [
     kicker: "Classroom celebrations",
     image: "/images/cat-school.png",
     size: "tall",
-    alt: "School party crowns, balloons and gold stars",
+    alt: "Bright school party crowns, balloons and gold stars",
   },
 ];

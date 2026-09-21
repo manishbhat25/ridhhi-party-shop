@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Ridhhi Party Shop">
-  <rect width="32" height="32" rx="8" fill="#F6F1E8"/>
-  <rect x="6" y="13" width="20" height="13" rx="2" fill="#C4A574"/>
-  <rect x="6" y="9" width="20" height="6" rx="1.6" fill="#D4B896"/>
-  <rect x="14.2" y="9" width="3.6" height="17" fill="#E07A5F"/>
-  <path d="M16 9c-2.4-3.2-6.2-2.2-6.2 0C9.8 12.2 16 13 16 13c0 0 6.2-.8 6.2-4 0-2.2-3.8-3.2-6.2 0z" fill="#E07A5F"/>
+  <rect width="32" height="32" rx="8" fill="#FFF7FB"/>
+  <rect x="6" y="13" width="20" height="13" rx="2" fill="#F4C430"/>
+  <rect x="6" y="9" width="20" height="6" rx="1.6" fill="#FF7AB6"/>
+  <rect x="14.2" y="9" width="3.6" height="17" fill="#FF2E8A"/>
+  <path d="M16 9c-2.4-3.2-6.2-2.2-6.2 0C9.8 12.2 16 13 16 13c0 0 6.2-.8 6.2-4 0-2.2-3.8-3.2-6.2 0z" fill="#FF2E8A"/>
 </svg>

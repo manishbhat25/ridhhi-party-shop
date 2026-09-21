@@ -50,7 +50,7 @@ function CategoryCard({
       <div
         aria-hidden="true"
         className={cn(
-          "absolute top-7 right-7 h-16 w-16 rounded-full bg-champagne/35 blur-sm transition-transform duration-500",
+          "absolute top-7 right-7 h-16 w-16 rounded-full bg-coral/45 blur-md transition-transform duration-500",
           !reduced && "group-hover:translate-x-2 group-hover:-translate-y-1",
         )}
       />
