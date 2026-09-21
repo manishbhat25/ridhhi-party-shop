@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/Button";
 import {
   displayLocation,
+  displayWhatsApp,
   fullLocation,
   hasPhone,
   hasWhatsApp,
@@ -49,6 +50,18 @@ export function StoreLocation() {
               <p className="mt-4">
                 <a href={telHref} className="text-coral underline decoration-coral/40">
                   {site.phone}
+                </a>
+              </p>
+            ) : null}
+            {hasWhatsApp && whatsappHref ? (
+              <p className="mt-4">
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-coral underline decoration-coral/40"
+                >
+                  WhatsApp {displayWhatsApp}
                 </a>
               </p>
             ) : null}

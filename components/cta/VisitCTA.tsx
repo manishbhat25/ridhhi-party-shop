@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { hasPhone, site, telHref } from "@/content/site";
+import { hasPhone, hasWhatsApp, site, telHref, whatsappHref } from "@/content/site";
 import { directionsHref } from "@/lib/maps";
 import { useReducedMotion } from "motion/react";
 
@@ -49,7 +49,11 @@ export function VisitCTA() {
           <Button href={directionsHref} variant="ink" external>
             Get Directions
           </Button>
-          {hasPhone && telHref ? (
+          {hasWhatsApp && whatsappHref ? (
+            <Button href={whatsappHref} variant="coral" external>
+              WhatsApp Us
+            </Button>
+          ) : hasPhone && telHref ? (
             <Button href={telHref} variant="coral">
               Call the Shop
             </Button>

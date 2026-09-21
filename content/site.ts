@@ -5,7 +5,7 @@
  * from the UI and from JSON-LD — nothing here is invented for marketing.
  *
  * Fill later:
- *   phone, whatsapp, streetAddress, postalCode, openingHoursDisplay,
+ *   phone, streetAddress, postalCode, openingHoursDisplay,
  *   openingHours, geo, mapsUrl, mapsEmbedUrl, sameAs
  *
  * Production URL: set NEXT_PUBLIC_SITE_URL (e.g. https://ridhhipartyshop.com)
@@ -21,7 +21,7 @@ export const site = {
   /** E.164 or local, e.g. "+91 9XXXXXXXXX". Empty = hide Call. */
   phone: "",
   /** Digits with country code, e.g. "919XXXXXXXXX". Empty = hide WhatsApp. */
-  whatsapp: "",
+  whatsapp: "916392178984",
 
   streetAddress: "",
   postalCode: "",
@@ -38,7 +38,7 @@ export const site = {
   /** Embed URL. Empty = search-based embed, loaded only on demand. */
   mapsEmbedUrl: "",
 
-  sameAs: [] as string[],
+  sameAs: ["https://wa.me/916392178984"],
 
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;
@@ -55,6 +55,10 @@ export const telHref = hasPhone
 export const whatsappHref = hasWhatsApp
   ? `https://wa.me/${site.whatsapp.replace(/\D/g, "")}`
   : undefined;
+
+export const displayWhatsApp = hasWhatsApp
+  ? `+${site.whatsapp.replace(/\D/g, "").replace(/^91/, "91 ")}`
+  : "";
 
 export const displayLocation = `${site.locality}, ${site.city}`;
 export const fullLocation = `${site.locality}, ${site.city}, ${site.region}, ${site.countryName}`;

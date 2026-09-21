@@ -1,6 +1,6 @@
 "use client";
 
-import { site, telHref, whatsappHref } from "@/content/site";
+import { hasWhatsApp, site, telHref, whatsappHref } from "@/content/site";
 import { directionsHref } from "@/lib/maps";
 import { cn } from "@/lib/cn";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
@@ -103,6 +103,16 @@ export function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
+            {hasWhatsApp && whatsappHref ? (
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden min-h-11 items-center rounded-full bg-coral px-5 text-sm text-ivory shadow-[0_8px_22px_-10px_rgba(255,46,138,0.85)] transition-transform hover:scale-[1.02] md:inline-flex"
+              >
+                WhatsApp
+              </a>
+            ) : null}
             <a
               href={directionsHref}
               target="_blank"
@@ -169,31 +179,34 @@ export function Navbar() {
                   </li>
                 ))}
               </ul>
+              {hasWhatsApp && whatsappHref ? (
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="mt-10 inline-flex min-h-12 items-center justify-center rounded-full bg-coral px-6 text-ivory"
+                >
+                  WhatsApp Us
+                </a>
+              ) : null}
               <a
                 href={directionsHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-10 inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-6 text-ivory"
+                className={cn(
+                  "inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-6 text-ivory",
+                  hasWhatsApp ? "mt-4" : "mt-10",
+                )}
               >
                 Get Directions
               </a>
-              {telHref || whatsappHref ? (
+              {telHref ? (
                 <p className="mt-4 text-sm text-ink-soft">
-                  {telHref ? (
-                    <a href={telHref} className="underline decoration-champagne">
-                      Call the shop
-                    </a>
-                  ) : null}
-                  {telHref && whatsappHref ? " · " : null}
-                  {whatsappHref ? (
-                    <a
-                      href={whatsappHref}
-                      className="underline decoration-champagne"
-                    >
-                      WhatsApp
-                    </a>
-                  ) : null}
+                  <a href={telHref} className="underline decoration-champagne">
+                    Call the shop
+                  </a>
                 </p>
               ) : null}
             </div>

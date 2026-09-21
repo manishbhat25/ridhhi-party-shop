@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { hasWhatsApp, whatsappHref } from "@/content/site";
 import { directionsHref } from "@/lib/maps";
 import Image from "next/image";
 
@@ -52,6 +53,11 @@ export function Hero() {
           <Button href="#explore" variant="ink">
             Explore the Shop
           </Button>
+          {hasWhatsApp && whatsappHref ? (
+            <Button href={whatsappHref} variant="coral" external>
+              WhatsApp Us
+            </Button>
+          ) : null}
           <Button href={directionsHref} variant="outline" external>
             Get Directions
           </Button>
